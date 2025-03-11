@@ -1,24 +1,29 @@
 import logo from './logo.svg';
-import './App.css';
+import './Homepage.css';
+import './weather.css'
+import Weatherpage from './pages/Weatherpage.js';
+import Homepage from './pages/Homepage.js'; 
+import Citypage from './pages/cityweather.js'; 
+import Mappage from './pages/Mappage.js'; 
+import "leaflet/dist/leaflet.css";
+import "./maps.css"
+
+
+
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path="/weather" element={<Weatherpage/>}/>
+        <Route path="/weather/:cityname" element={<Citypage/>}/>
+        <Route path="/weather/:cityname/viewmap" element={<Mappage/>}/>
+
+      </Routes>
+    </Router>
+  
   );
 }
 

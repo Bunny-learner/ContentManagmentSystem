@@ -1,0 +1,63 @@
+
+.nav-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #de787b, #875a4d);
+}
+.offcanvas-body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe); /* Vibrant Sky Blue Gradient */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  
+}
+.navbar-toggler{
+  background-color: white;
+}
+.navbar-brand{
+  background-color: white;
+  padding:0px;
+  border:1px;
+  border-radius: 10px;
+}
+.image{
+  transform: rotate(180deg);
+}
+.nav-item {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-item a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-item a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.08);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.weather-icon{
+  font-size: 3rem;
+}
+
