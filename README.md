@@ -2,7 +2,9 @@
 Every 3-hour Weather forecast application with weather data maps, precipitation map, etc.
 
 ---
-
+npx react create-my-app
+npm i express
+npm i ol
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
