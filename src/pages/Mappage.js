@@ -12,6 +12,7 @@ function Mappage() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
+  
 
 
   
@@ -55,6 +56,7 @@ function Mappage() {
   return (
     <>
       <Navbar cityname={cityname} time={time}  link={`/weather/${cityname}`} />
+
       <Maps latitude={latitude} longitude={longitude} />
     </>
   );

@@ -28,3 +28,10 @@ div#map-container {
   }
 
     
+  @media only  screen and (max-width:450px) {
+    .mappy{  
+      top: 155px;
+    }
+  
+    
+  }

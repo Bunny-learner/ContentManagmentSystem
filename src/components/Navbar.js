@@ -15,7 +15,7 @@ export default class Navbar extends Component {
             <nav class="navbar">
                 <div class="container-fluid">
                     <Link class="navbar-brand" to={this.props.link}><img className="image" src="/right.png" alt="" /></Link>
-                    <h2 className="time-heading" style={{ textAlign: "center", fontWeight:700,marginBottom: "20px" }}>
+                    <h2 className="time-heading" style={{ textAlign: "center", fontWeight:700}}>
           {this.props.cityname}&nbsp;&nbsp;&nbsp;&nbsp;{this.props.time}</h2>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

@@ -52,11 +52,11 @@ const Citypage = () => {
       .then((response) => {
         console.log("weather data:", response.data);
         setWeather(
-          response.data.list.slice(0, 6).map((item) => ({
+          response.data.list.slice(0, 39).map((item) => ({
             ...item,
             flipped: false,
           }))
-        ); // Take first 6 forecasts
+        ); 
       })
       .catch((error) => {
         console.error("Error fetching data:", error);

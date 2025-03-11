@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from "axios";
+import "../weather.css"
+import Spinner from  "../components/Spinner.js"
 import { useNavigate } from "react-router-dom";
 
 function Weatherpage({ onSearch }) {
@@ -30,7 +32,7 @@ function Weatherpage({ onSearch }) {
       }
     };
 
-    const delayDebounce = setTimeout(fetchCities, 200);
+    const delayDebounce = setTimeout(fetchCities, 500);
     return () => clearTimeout(delayDebounce);
   }, [query]);
 
@@ -63,11 +65,13 @@ function Weatherpage({ onSearch }) {
       </div>
 
       {loading ? (
-        <div className="cities">
-           <p>Loading...</p>
-        </div>
+        <Spinner/>
        
-      ) : (
+      ):cities.length==0?( 
+        <div className="no-cities-container" style={{height:"30vh",position:"relative",top:"20vh"}}>
+          <p id="nothing-message">🌍 No Cities Found. Try a different search. 🔍</p>
+        </div>
+      ):(
         <div className="cities">
           {cities.length > 0 ? (
             cities.map((cityObj, index) => (
@@ -75,10 +79,7 @@ function Weatherpage({ onSearch }) {
                 {cityObj.name}
               </p>
             ))
-          ) : (
-            <p id="no-cities-message">🌍 No Cities Found Yet! Try a different search. 🔍</p>
-
-          )}
+          ):null}
         </div>)}
     </div>
       

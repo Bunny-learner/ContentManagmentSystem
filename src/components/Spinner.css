@@ -1,0 +1,63 @@
+/* Centering the spinner */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width:80vw;
+  background-color: #0a0a2a; /* Deep dark blue background */
+}
+
+/* The Ultimate Dark Blue Gradient Spinner */
+.spinner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top: 6px solid #0044ff; /* Dark blue */
+  border-right: 6px solid #0022aa; /* Deeper blue */
+  border-bottom: 6px solid #001166; /* Even darker blue */
+  border-left: 6px solid #00aaff; /* Lighter neon blue */
+  animation: spin 1.2s linear infinite, glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Glowing animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 68, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(0, 170, 255, 1);
+  }
+}
+
+/* Spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ultra Stylish Loading Text */
+.loading-text {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00aaff; /* Bright cyan-blue */
+  text-shadow: 0 0 10px rgba(0, 170, 255, 0.8);
+  animation: pulse 1.5s infinite alternate;
+}
+
+/* Pulsing effect for text */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
