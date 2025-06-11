@@ -1,0 +1,246 @@
+.navbar{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    position: fixed;
+    padding:0px;
+    top: 0;
+    min-height: 60px;
+    user-select: none;
+    background-color: #bec7cb99; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000; /* ensure it stays on top */
+}
+#approve {
+    background-color: #28a745; /* Bootstrap green */
+    color: white;
+}
+
+
+@media only screen and (max-width:330px){
+.image-component img{
+    width:100%;
+}
+}
+#approve:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Reject button */
+#reject {
+    background-color: #dc3545; /* Bootstrap red */
+    color: white;
+}
+
+.bottom{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#reject:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.action-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}.action-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#optional {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    margin-bottom:20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+#optional:focus {
+    border-color: #4a90e2; /* Nice blue */
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    background-color: #fff;
+}
+
+#optional::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+.home{
+    border:0px transparent
+}
+
+
+.msgsection{
+    background-color: rgb(202, 199, 199);
+    width: 40vw;
+    height: 100vh;
+    position:absolute;
+    top:70px;
+    z-index: 10000;
+}
+.bell-icon{
+    width:40px;
+   
+}
+@keyframes shake {
+  0% { transform: rotate(0); }
+  10% { transform: rotate(15deg); }
+  20% { transform: rotate(-15deg); }
+  30% { transform: rotate(10deg); }
+  40% { transform: rotate(-10deg); }
+  50% { transform: rotate(5deg); }
+  60% { transform: rotate(-5deg); }
+  100% { transform: rotate(0); }
+}
+
+.ring {
+  animation: shake 1s ease-in-out infinite;
+}
+
+
+.navbar h2{
+    color:black;
+    margin-left: 20px;
+}
+nav button {
+  padding: 10px 16px;
+  background-color: #f0f4f8;
+  color: #333;
+  border: none;
+  width: 130px;
+  border-top-left-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+#red {
+  background-color: #ff4d4f;
+  border-top-left-radius: 0;
+  color: white;
+}
+
+#red:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+.different {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.different:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+  nav button {
+    padding: 6px 10px;
+    width: 90px;
+    font-size: 14px;
+  }
+
+  nav .different {
+    width: 30px;
+  }
+  
+}
+
+
+nav span{
+    font-size: 20px;
+}
+
+
+p{
+    font-size: 20px;
+}
+@media (max-width: 400px) {
+    
+    nav button{
+        padding:5px;
+        width:80px;
+    }
+    nav .different{
+        width:30px;
+    }
+    .bell-icon{
+        width:25px;
+    }
+    img{
+        width:100%;
+    }
+}
+.hided{
+  display:none;
+}
+
+@media only screen and (max-width:500px) {
+    #pms{
+    font-size: 26px;
+  }
+  #postname{
+    font-size:18px;
+  }
+  img{
+    width:100%;
+    height:auto;
+  }
+}
+
+.reddot{
+  background-color:red;
+  color:white;
+ text-align: center;
+ padding:0 0 10px;
+  font-weight: 900;
+  font-size: 18px;
+  border:1px solid red;
+  border-radius: 13px;
+width:28px;
+height:28px;
+  position:relative;
+  top:8px;
+  z-index:9000;
+  left:40px;
+}

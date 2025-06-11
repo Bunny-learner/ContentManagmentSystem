@@ -1,0 +1,141 @@
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  position: sticky;
+  top: 70px;
+  z-index: 10;
+  flex-grow: 1;
+}
+
+.button-group button {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.button-group button:hover {
+  background-color: #e0e0e0;
+}
+
+.button-group button.is-active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.button-group .publish,
+.button-group .save {
+  padding: 10px 16px;
+  font-weight: 600;
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+}
+
+.button-group .save {
+  background-color: #ffc107;
+}
+
+.button-group .publish:hover {
+  background-color: #218838;
+}
+
+.button-group .save:hover {
+  background-color: #e0a800;
+}
+
+
+.ProseMirror {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  padding: 10px;
+  margin-top:10px;
+
+}
+.ProseMirror strong {
+  display: inline;
+  font-weight: bold;
+}
+
+.postcontent .defaultimg{
+  width:200px ;
+  height:auto;
+  margin:0px;
+}
+
+.postcontent{
+  display:flex;
+  flex-wrap: nowrap;
+  align-items:flex-start;
+}
+.postcontent span{
+  display: flex;
+  flex-wrap: wrap;
+}
+.postcontent p{
+  padding:10px;
+}
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  width: 600px; 
+  cursor:grab
+}
+
+@media only screen and (max-width: 670px) {
+.postcontent{
+  flex-wrap: wrap;
+}
+
+.defaultimg{
+  width:300px;
+}
+}
+
+
+
+@media only screen and (max-width: 400px) {
+.typeposts button{
+  width:70px;
+  padding:3px;
+  padding-top:5px;
+  margin:0px;
+  font-size: 13px;
+}
+.typeposts{
+  display: flex;
+  gap: 5px;
+}
+}
+
+
+
+.editor .ProseMirror {
+  min-height: 80vh;
+  width:100vw;
+  border:1px solid;
+  border-top:0px solid;
+  background-color: whitesmoke;
+}
+.editor .ProseMirror:focus {
+  border:2px solid rgb(13, 109, 234);
+  outline:1px solid rgb(13, 109, 234) ;
+  transform:perspective()
+}

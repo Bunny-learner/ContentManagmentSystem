@@ -1,0 +1,47 @@
+.admin-dashboard,.users,.logs,.activity{
+    width:60vw;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin-top:120px;
+    min-height: 1px;
+    border:1px solid #ccc;
+    padding:20px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.editor-header{
+    width:100vw;
+}
+
+.any{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.users{
+    width:80vw;
+}
+
+
+.admin-dashboard h2{
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+}
+
+.admin-dashboard button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.admin-dashboard button:hover{
+    background-color:blue;
+    color: white;
+    cursor: pointer;
+}

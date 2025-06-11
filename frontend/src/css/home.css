@@ -1,0 +1,24 @@
+
+.dash {
+list-style: none;
+}
+
+.main{
+    width:100vw;
+    position: relative;
+    overflow-x: hidden;
+    margin:0px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding:0px;
+}
+.dash li{
+    padding:10px;
+    background-color: blue;
+    color:white;
+    margin:5px;
+}
+.dash strong{
+    color:yellow;
+}

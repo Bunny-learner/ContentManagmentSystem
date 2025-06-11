@@ -1,0 +1,166 @@
+/* Container */
+.signup-wrapper {
+  max-width: 420px;
+  margin: 4rem auto 6rem;
+  padding: 3.2rem 2.4rem 4rem 2.4rem; /* added extra bottom padding */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  overflow: visible; /* allow shadows to overflow without scroll */
+}
+
+/* Title */
+.form-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #34495e;
+  user-select: none;
+}
+
+/* Form styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+/* Labels */
+.signup-form label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #34495e;
+  user-select: none;
+}
+
+/* Inputs */
+.signup-form input {
+  padding: 12px 16px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  border: 2px solid #bdc3c7;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 2px;
+}
+
+.signup-form input:focus {
+  border-color: #e67e22;
+  box-shadow: 0 0 8px rgba(230, 126, 34, 0.45);
+  outline: none;
+}
+
+/* Error messages */
+.error-message {
+  margin-top: 0.25rem;
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 1rem;
+  background-color: #e67e22;
+  border: 2px solid #e67e22;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 14px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(230, 126, 34, 0.35);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  overflow: visible; /* allow shadow to overflow */
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #d35400;
+  border-color: #d35400;
+  box-shadow: 0 6px 20px rgba(211, 84, 0, 0.45); /* slightly smaller shadow */
+  outline: none;
+  /* removed overflow:hidden */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signup-wrapper {
+    margin: 3rem 1rem 4rem;
+    padding: 2.4rem 1.6rem 3rem 1.6rem; /* adjusted bottom padding for smaller screens */
+  }
+
+  .form-title {
+    font-size: 1.6rem;
+  }
+
+  .signup-form input {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+    padding: 12px 0;
+  }
+}
+
+.login-redirect {
+  margin-top: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  user-select: none;
+}
+
+.login-redirect p {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+form,.login-redirect{overflow-y: hidden;}
+
+.login-btn {
+  background-color: #27ae60; /* green color */
+  border: 2px solid #27ae60;
+  color: white;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(39, 174, 96, 0.35);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.back-home-btn {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 1rem;
+  margin-bottom: 1.6rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-home-btn:hover,
+.back-home-btn:focus {
+  color: #1d6fa5;
+  outline: none;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background-color: #1e8449;
+  border-color: #1e8449;
+  box-shadow: 0 8px 22px rgba(30, 132, 73, 0.5);
+  outline: none;
+}

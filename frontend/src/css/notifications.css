@@ -1,0 +1,188 @@
+.notifications-container {
+  width: 89vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin-top:120px;
+}
+
+
+span.group{
+  background-color: black;
+  display: flex;
+  width:100%;
+  margin:0px;
+}
+
+.group button{
+background-color: transparent;
+border:0px;
+margin-left:7px;
+}
+.group button:hover{
+  background-color: white;
+  color: black;
+}
+section{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.msg{
+  z-index: 500;
+    bottom: 0px;
+    position: absolute;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    background-color:#f0f0f0;
+}
+
+.msg input {
+            flex-grow: 1; /* Allow input to take available space */
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 20px; /* Rounded input field */
+            outline: none;
+            font-size: 1rem;
+            margin-right: 10px; /* Space between input and button */
+        }
+
+        .msg button {
+            background-color: #3b82f6; /* Blue button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounded button */
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .msg button:hover {
+            background-color: #2563eb;
+        }
+.notify-editor,.notify-viewer,.rejected{
+  overflow-y:scroll;
+  height:100%;
+  width:100%;
+  padding:0px;
+  font-size: 20px;
+  text-align: left;
+  list-style-type: none;
+}
+
+
+
+        .vmsgs {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin: 10px; /* Space between messages */
+            border: 1px solid #e0e0e0;
+           
+        }
+
+        .vmsgs p {
+            margin: 0;
+            padding: 2px 0;
+            line-height: 1.4; /* Improve readability */
+        }
+
+        .vmsgs .msg-from {
+            font-weight: bold;
+            color: #4a90e2; /* Blue for 'from' */
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .vmsgs .msg-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .vmsgs .msg-description {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+.notifications-container h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 8px;
+}
+
+.notifications-content {
+  height: 70vh;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #777;
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+  background: #fff;
+}
+
+
+/* Styling for the message list */
+/* ... other #message-list and .vmsgs styles ... */
+
+.vmsgs p {
+    margin: 0;
+    padding: 2px 0;
+    line-height: 1.4;
+}
+
+.reg{
+  color:#13630e;
+}
+.vmsgs .from { /* For the 'From' paragraph */
+    font-weight: bold;
+    color: #4a90e2; /* Blue color */
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+
+
+.vmsgs .title { /* For the 'Title' paragraph */
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1em;
+    border-bottom:3px solid blue;
+    margin-bottom: 8px;
+}
+
+.vmsgs .desc,.rfe { /* For the 'Description' span */
+    color: #555;
+    font-size: 0.95em;
+}
+.rfe{
+  color:rgb(0, 94, 255);
+  font-weight: 400;
+}
+
+@media only screen and (max-width:450px){
+
+  .vmsgs{
+    font-size: 16px;
+  }
+  .notifications-container{
+    padding:5px;
+  }
+
+}

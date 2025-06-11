@@ -1,0 +1,50 @@
+.users p{
+    display: flex;
+    justify-content: space-between;
+}
+.users p span{
+    color:blue;
+}
+
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;   
+}
+ table th, .logs table td{
+    border: 1px solid #3d3a3a;
+    padding: 8px;
+    text-align: left;
+}
+ table th{
+    background-color: blue;
+    border-right:1px solid white;
+    color:white;
+}
+table tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.users select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.users select:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.users  td{
+    padding:15px;
+    background-color:white;
+    font-size: 18px;
+}
